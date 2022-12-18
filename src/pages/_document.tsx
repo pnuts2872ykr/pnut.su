@@ -16,13 +16,13 @@ class MyDocument extends Document {
     return (
       <Html lang='ja'>
         <Head>
-          <meta property='og:site_name' content='pnuts2872ykr.net' />
-          <meta property='og:locale' content='ja_JP' />
-          <meta property='og:type' content='website' />
-          <meta
-            property='og:image'
-            content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
-          />
+          <meta name="description" content="pnuts portfolio" />
+          <meta property='og:description' content="pnuts portfolio" />
+          <meta property='og:site_name' content='pnuts2872ykr.net' key="og_site_name" />
+          <meta property='og:locale' content='ja_JP' key="og_locale" />
+          <meta property='og:type' content='website' key="og_type" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@pnuts2872ykr" />
         </Head>
         <body className='relative bg-black text-white'>
           <Main />

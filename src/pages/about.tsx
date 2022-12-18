@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {
+  AiFillMail
+} from 'react-icons/ai';
+import {
   FaDiscord,
   FaGithub,
   FaTelegramPlane,
@@ -98,6 +101,12 @@ export default function About() {
             url='https://jp.mercari.com/user/profile/222555289'
             className='bg-[#ff0211]'
           />
+          <Social
+          icon={<AiFillMail size={(25)} />}
+            name='Mail'
+            username='pnuts@vcborn.com'
+            className='bg-[#101dce]'
+            />
         </div>
       </div>
     </Layout>
