@@ -11,6 +11,9 @@ import {
   FaVrCardboard,
   FaYoutube,
 } from 'react-icons/fa';
+import {
+  MdCasino
+} from'react-icons/md';
 
 import Layout from '@/components/Layout';
 import Social from '@/components/Social';
@@ -105,7 +108,13 @@ export default function About() {
           icon={<AiFillMail size={(25)} />}
             name='Mail'
             username='pnuts@vcborn.com'
-            className='bg-[#101dce]'
+            className='bg-[#333366]'
+            />
+            <Social
+          icon={<MdCasino size={(25)} />}
+            name='Stake'
+            username='pnuts2872ykr'
+            className='bg-[#162135]'
             />
         </div>
       </div>
