@@ -23,6 +23,8 @@ class MyDocument extends Document {
           <meta property='og:type' content='website' key="og_type" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@pnuts2872ykr" />
+           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336300432888389"
+     crossOrigin="anonymous"></script>
         </Head>
         <body className='relative bg-black text-white'>
           <Main />

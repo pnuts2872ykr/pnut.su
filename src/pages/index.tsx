@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaInstagramSquare, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import Layout from '@/components/Layout';
 
@@ -11,10 +11,10 @@ export default function Home() {
         <title>pnuts2872ykr.net</title>
         <meta property='og:title' content='pnuts2872ykr.net' key="og_title" />
         <meta
-            property='og:image'
-            content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
-            key="og_image"
-          />
+          property='og:image'
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
+          key="og_image"
+        />
       </Head>
       <div className='flex h-screen w-full flex-col items-center justify-center'>
         <div className='flex flex-col items-center bg-neutral-900 py-32 px-8 md:px-20'>
@@ -33,6 +33,12 @@ export default function Home() {
               className='rounded-full bg-[#1da1f2] p-3 duration-200 hover:opacity-80'
             >
               <FaTwitter size={25} />
+            </a>
+            <a
+              href='https://instagram.com/pnuts2872ykr/'
+              className='rounded-full bg-[#B500FF] p-3 duration-200 hover:opacity-80'
+            >
+              <FaInstagramSquare size={25} />
             </a>
             <a
               href='https://github.com/pnuts2872ykr'

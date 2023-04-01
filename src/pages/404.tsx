@@ -1,36 +1,31 @@
-import Document, {
-  DocumentContext,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from 'next/document';
+import Head from 'next/head';
+import { RiAlarmWarningFill } from 'react-icons/ri';
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
+import Layout from '@/components/Layout';
 
-  render() {
-    return (
-      <Html lang='ja'>
-        <Head>
-          <meta name="description" content="pnuts portfolio" />
-          <meta property='og:description' content="pnuts portfolio" />
-          <meta property='og:site_name' content='pnuts2872ykr.net' key="og_site_name" />
-          <meta property='og:locale' content='ja_JP' key="og_locale" />
-          <meta property='og:type' content='website' key="og_type" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@pnuts2872ykr" />
-        </Head>
-        <body className='relative bg-black text-white'>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+export default function NotFoundPage() {
+  return (
+    <Layout>
+      <Head>
+        <title>404 | pnuts2872ykr.net</title>
+        <meta property='og:title' content='404 | pnuts2872ykr.net' key="og_title" />
+        <meta
+            property='og:image'
+            content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
+            key="og_image"
+          />
+      </Head>
+      <main>
+        <section>
+          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
+            <RiAlarmWarningFill
+              size={60}
+              className='drop-shadow-glow animate-flicker text-red-500'
+            />
+            <h1 className='mt-8 text-4xl md:text-6xl'>Page Not Found</h1>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
 }
-
-export default MyDocument;

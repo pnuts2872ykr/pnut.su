@@ -6,14 +6,12 @@ import {
 import {
   FaDiscord,
   FaGithub,
+  FaInstagramSquare,
   FaTelegramPlane,
   FaTwitter,
   FaVrCardboard,
   FaYoutube,
 } from 'react-icons/fa';
-import {
-  MdCasino
-} from'react-icons/md';
 
 import Layout from '@/components/Layout';
 import Social from '@/components/Social';
@@ -27,10 +25,10 @@ export default function About() {
         <title>About | pnuts2872ykr.net</title>
         <meta property='og:title' content='About | pnuts2872ykr.net' key="og_title" />
         <meta
-            property='og:image'
-            content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
-            key="og_image"
-          />
+          property='og:image'
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/images/large-og.png`}
+          key="og_image"
+        />
       </Head>
       <div className='container mx-auto my-12 max-w-2xl px-4 lg:max-w-4xl xl:max-w-7xl'>
         <h2 className='text-5xl font-semibold'>About</h2>
@@ -51,7 +49,7 @@ export default function About() {
         </div>
         <div className='prose prose-invert lg:prose-xl'>
           <p>VCbornのリーダーをやってるぴなっつです！</p>
-          <p>カジノやって金とかしたりゲームやって受験落ちそうな人です！！</p>
+          <p>高校受かって浮かれてる人です。</p>
           <p>録画鯖いじってたりマイクラ鯖いじってたりはしてます。</p>
         </div>
         <h3 className='mt-8 mb-4 text-4xl font-semibold'>Socials</h3>
@@ -62,6 +60,13 @@ export default function About() {
             username='pnuts2872ykr'
             url='https://twitter.com/pnuts2872ykr'
             className='bg-[#1da1f2]'
+          />
+          <Social
+            icon={<FaInstagramSquare size={(25)} />}
+            name='Instagram'
+            username='pnuts2872ykr'
+            url='https://instagram.com/pnuts2872ykr/'
+            className='bg-[#B500FF]'
           />
           <Social
             icon={<FaYoutube size={25} />}
@@ -101,21 +106,15 @@ export default function About() {
             icon={<Mercari width='25px' height='25px' />}
             name='Mercari'
             username='pnuts2872ykr'
-            url='https://jp.mercari.com/user/profile/222555289'
+            url='https://jp.mercari.com/user/profile/485252446?utm_source=ios&utm_medium=share'
             className='bg-[#ff0211]'
           />
           <Social
-          icon={<AiFillMail size={(25)} />}
+            icon={<AiFillMail size={(25)} />}
             name='Mail'
             username='pnuts@vcborn.com'
             className='bg-[#333366]'
-            />
-            <Social
-          icon={<MdCasino size={(25)} />}
-            name='Stake'
-            username='pnuts2872ykr'
-            className='bg-[#162135]'
-            />
+          />
         </div>
       </div>
     </Layout>

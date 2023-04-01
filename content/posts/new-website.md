@@ -1,9 +1,9 @@
 ---
-title: 'New!WebSites!!'
+title: 'New!Website!!'
 date: '2022/12/18'
 ---
 
-## New!WebSites!!
+## New!Website!!
 
 ぴなっつの新しい Web サイトができたんだとさ！！  
 いつもの[wamo](https://wmsci.com)ﾆｷに Next.js やらなんやらで作ってもらったよ！！  
