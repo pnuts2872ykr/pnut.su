@@ -1,4 +1,4 @@
-# pnuts2872ykr.net
+# pnut.su
 
 # 適当に書くよ()
 
